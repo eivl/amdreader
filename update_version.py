@@ -1,4 +1,4 @@
-from tomlkit import dumps, parse, table
+from tomlkit import dumps, parse
 
 
 def update_init(major=False, minor=False, patch=False):
