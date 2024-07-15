@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="amd-logo.png"  width="600" align="center"/>
+  <img src="https://github.com/eivl/amdreader/blob/6f27ff68b130ea43303a7a8a90cc07776e446cd8/amd-logo.png"  width="600" align="center"/>
 </p>
 
 
