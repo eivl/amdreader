@@ -28,9 +28,6 @@ from ..utility import (
 )
 from ..utility.advertising import (
     APPLICATION_TITLE,
-    ORGANISATION_NAME,
-    ORGANISATION_TITLE,
-    ORGANISATION_URL,
     PACKAGE_NAME,
     TEXTUAL_URL,
 )
