@@ -6,7 +6,7 @@ def update_init(major=False, minor=False, patch=False):
     if all([not major, not minor, not patch]):
         print("Please specify the version to update")
         return
-    file_name = r'amd\__init__.py'
+    file_name = r"amd\__init__.py"
     with open(file_name) as f:
         raw_data = f.read()
     data = raw_data.split("__version__ = ")
