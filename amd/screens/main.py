@@ -500,9 +500,9 @@ class Main(Screen[None]):  # pylint:disable=too-many-public-methods
             InformationDialog(
                 f"{APPLICATION_TITLE} [b dim]v{__version__}",
                 f"Built with [@click=app.visit('{TEXTUAL_URL}')]Textual[/] "
-                f"by [@click=app.visit('{ORGANISATION_URL}')]{ORGANISATION_TITLE}[/].\n\n"
-                f"[@click=app.visit('https://github.com/{ORGANISATION_NAME}/{PACKAGE_NAME}')]"
-                f"https://github.com/{ORGANISATION_NAME}/{PACKAGE_NAME}[/]",
+                f"by [@click=app.visit('https://github.com/eivl')]eivl[/].\n\n"
+                f"[@click=app.visit('https://github.com/eivl/{PACKAGE_NAME}')]"
+                f"https://github.com/eivl/{PACKAGE_NAME}[/]",
             )
         )
 

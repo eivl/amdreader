@@ -7,13 +7,13 @@ from .. import __version__
 ORGANISATION_NAME: Final[str] = "textualize"
 """The organisation name to use when creating namespaced resources."""
 
-ORGANISATION_TITLE: Final[str] = "Textualize"
+ORGANISATION_TITLE: Final[str] = "eivl"
 """The organisation title."""
 
 ORGANISATION_URL: Final[str] = "https://www.textualize.io/"
 """The organisation URL."""
 
-PACKAGE_NAME: Final[str] = "amd"
+PACKAGE_NAME: Final[str] = "amdreader"
 """The name of the package."""
 
 APPLICATION_TITLE: Final[str] = "amd"
