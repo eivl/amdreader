@@ -53,4 +53,5 @@ def update_version(version, major=False, minor=False, patch=False):
 
 
 if __name__ == "__main__":
-    ...
+    update_poetry_version(patch=True)
+    update_init(patch=True)

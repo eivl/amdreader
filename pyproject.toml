@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "amdreader"
 homepage = "https://github.com/eivl/amdreader"
-version = "0.9.3"
+version = "0.9.4"
 description = "A Markdown document viewer for the terminal"
 authors = ["Eivind Teig <eivind.teig@gmail.com>", "Dave Pearson <dave@textualize.io>"]
 license = "MIT"
