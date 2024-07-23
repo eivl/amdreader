@@ -80,6 +80,7 @@ class Main(Screen[None]):  # pylint:disable=too-many-public-methods
         Binding("ctrl+y", "history", "", show=False),
         Binding("escape", "escape", "", show=False),
         Binding("f1", "help", "Help"),
+        Binding("ctrl+h", "help", "Help"),
         Binding("f2", "about", "About"),
         Binding("ctrl+n", "navigation", "Navigation"),
         Binding("ctrl+q", "app.quit", "Quit"),
