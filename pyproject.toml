@@ -1,12 +1,11 @@
-[tool.poetry]
+[project]
 name = "amdreader"
-homepage = "https://github.com/eivl/amdreader"
-version = "0.9.5"
-description = "A Markdown document viewer for the terminal"
-authors = ["Eivind Teig <eivind.teig@gmail.com>", "Dave Pearson <dave@textualize.io>"]
+version = "0.9.6"
+description = "A Markdown document viewer for the terminal."
+authors = [{name="Eivind Teig", email="eivind.teig@gmail.com"}, {name="Dave Pearson", email="dave@textualize.io"}]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "amd"}]
+requires-python = ">=3.10.0"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Environment :: Console",
@@ -20,30 +19,22 @@ classifiers = [
     "Operating System :: POSIX :: Linux",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Software Development :: Documentation",
     "Topic :: Text Processing :: Markup :: Markdown",
 ]
 
-[tool.poetry.dependencies]
-python = "^3.8"
-textual = "==0.53.1"
-typing-extensions = "^4.5.0"
-httpx = "^0.24.1"
-xdg = "^6.0.0"
+dependencies = [
+    "httpx>=0.28.1",
+    "textual>=7.3.0",
+    "xdg>=6.0.0",
+]
+
+[project.urls]
+homepage = "https://github.com/eivl/amdreader"
 
 
-tomlkit = "^0.13.0"
-[tool.poetry.group.dev.dependencies]
-textual-dev = "^1.1"
-mypy = "^1.1.1"
-pylint = "^2.17.1"
-pre-commit = "^3.2.1"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
-amd = "amd.app.app:run"
+[project.scripts]
+amd = "amd.app:run"
