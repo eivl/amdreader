@@ -1,6 +1,6 @@
 [project]
 name = "amdreader"
-version = "0.9.6"
+version = "0.9.7"
 description = "A Markdown document viewer for the terminal."
 authors = [{name="Eivind Teig", email="eivind.teig@gmail.com"}, {name="Dave Pearson", email="dave@textualize.io"}]
 license = "MIT"
@@ -27,6 +27,7 @@ classifiers = [
 ]
 
 dependencies = [
+    "httpcore>=1.0.9",
     "httpx>=0.28.1",
     "textual>=7.3.0",
     "xdg>=6.0.0",
@@ -35,6 +36,12 @@ dependencies = [
 [project.urls]
 homepage = "https://github.com/eivl/amdreader"
 
+[build-system]
+requires = ["setuptools >= 80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = true
 
 [project.scripts]
 amd = "amd.app:run"
